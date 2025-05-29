@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="3px">
+            <tr>
+                <th>Topic_name</th>
+                <th>Name</th>
+                <th>Url</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+
+            {% for upw in UWO %}
+            <tr>
+                <td>{{upw.topic_name}}</td>
+    
+                <td>{{upw.name}}</td>
+            
+                <td>{{upw.url}}</td>
+            
+                <td>{{upw.email}}</td>
+            
+                <td>{{upw.age}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
